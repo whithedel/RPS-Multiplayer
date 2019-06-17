@@ -127,7 +127,7 @@
         <div class="row">
             <div class="col-12">
                 <br><br><br>
-                <h1  style="background-color: red">PICK AN OPPONENT TO START A GAME</h1>
+                <h1 class="alert alert-primary" role="alert">PICK AN OPPONENT TO START A GAME</h1>
                 <ul class="list-group" id="userListSection">
 
                 </ul>
@@ -152,11 +152,42 @@
             </header>
         </div>
 
-        <div class="col-12">
+        <!-- <div class="col-12">
             <div class="score-board">
                 <div id="user-label" class="badge">user</div>
+                :<span id="user-score">0</span>
                 <div id="computer-label" class="badge">comp</div>
-                <span id="user-score">0</span>:<span id="computer-score">0</span>
+                :<span id="computer-score">0</span>
+            </div>
+        </div> -->
+
+        <div class="col-12 inline-block">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                        <div id="user-label" class="card-header text-uppercase font-weight-bold">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Your score is</h5>
+                            <p class="card-text" id="user-score">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card text-white bg-info mb-3 float-right" style="max-width: 18rem;">
+                        <div id="computer-label" class="card-header text-right text-uppercase font-weight-bold">Header
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Your opponent is</h5>
+                            <p class="card-text" id="computer-score">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -169,14 +200,33 @@
 
         <div class="col-12">
             <div class="choices">
-                <div class="choice" id="r">
-                    <img src="./rps_images/rock.png" alt="rock">
-                </div>
-                <div class="choice" id="p">
-                    <img src="./rps_images/paper.png" alt="paper">
-                </div>
-                <div class="choice" id="s">
-                    <img src="./rps_images/scissors.png" alt="scissors">
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="button" class="btn" data-toggle="tooltip" data-placement="top"
+                            title="You are about to pick Rock" >
+                            <div class="choice" id="r">
+                                <img src="./rps_images/rock.png" alt="rock">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn" data-toggle="tooltip" data-placement="top"
+                            title="You are about to pick Paper">
+                            <div class="choice" id="p">
+                                <img src="./rps_images/paper.png" alt="paper">
+                            </div>
+                        </button>
+
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn" data-toggle="tooltip" data-placement="top"
+                            title="You are about to pick Scissors">
+                            <div class="choice" id="s">
+                                <img src="./rps_images/scissors.png" alt="scissors">
+                            </div>
+                        </button>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,7 +236,7 @@
 
     </div>
 
-    <script type="text/javascript" src="./assests/rps_app.js"></script>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
 
@@ -220,7 +270,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="./assests/rps_app.js"></script>
 </body>
 
 </html>

@@ -35,7 +35,7 @@ header h1 {
     text-align: center;
     padding: 15px 20px;
     border-radius: 4px;
-    position: relative;
+    /* position: relative; */
 }
 
 
@@ -49,7 +49,7 @@ header h1 {
 
 #user-label {
 
-    position: absolute;
+    /* position: absolute; */
     top: 30px;
     left: -25px;
 
@@ -57,7 +57,7 @@ header h1 {
 
 #computer-label {
 
-    position: absolute;
+    /* position: absolute; */
     top: 30px;
     right: -30px;
 }
